@@ -74,13 +74,13 @@ export const botConfig = {
     },
 
     // How long users must wait before submitting another application (hours).
-    applicationCooldown: 24,
+    applicationCooldown: 5,
 
     // Auto-delete denied applications after this many days.
     deleteDeniedAfter: 7,
 
     // Auto-delete approved applications after this many days.
-    deleteApprovedAfter: 30,
+    deleteApprovedAfter: 7,
 
     // Role IDs allowed to manage applications.
     managerRoles: [], // Will be populated from environment or database
@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Gem",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Gems",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -194,11 +194,11 @@ export const botConfig = {
     },
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.5,
 
     // Jail time after failed rob (milliseconds).
-    // 3600000 = 1 hour.
-    robFailJailTime: 3600000,
+    // 300000 = 5 Min.
+    robFailJailTime: 300000,
   },
 
   // =========================
@@ -372,11 +372,11 @@ export const botConfig = {
     // Welcome template posted when a user joins.
     // Placeholders: {user}, {server}, {memberCount}
     defaultWelcomeMessage:
-      "Welcome {user} to {server}! We now have {memberCount} members!",
+      "Welcome {user} to {server}! We now have {memberCount} gamers!",
     // Goodbye template posted when a user leaves.
     // Placeholders: {user}, {memberCount}
     defaultGoodbyeMessage:
-      "{user} has left the server. We now have {memberCount} members.",
+      "{user} has left the server. We now have {memberCount} gamers.",
     // Channel ID for welcome messages.
     defaultWelcomeChannel: null,
     // Channel ID for goodbye messages.
