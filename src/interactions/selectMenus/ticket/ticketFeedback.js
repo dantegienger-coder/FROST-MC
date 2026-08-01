@@ -5,7 +5,7 @@ import { getColor } from '../../../config/bot.js';
 import { logTicketFeedback } from '../../../utils/ticket/ticketLogging.js';
 
 const STAR_LABELS = {
-    '1': '⭐ 1 — Poor',
+    '1': '⭐ 1 — u hate our service',
     '2': '⭐ 2 — Below Average',
     '3': '⭐ 3 — Average',
     '4': '⭐ 4 — Good',
